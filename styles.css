@@ -1,0 +1,59 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #ffeef2;
+    text-align: center;
+}
+
+.container {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+h1 { color: #d32f2f; margin: 5px; }
+
+.image-1, .image-2 {
+    width: 200px;
+    margin: 20px 0;
+}
+
+.botones {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.btn {
+    padding: 10px 25px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+    transition: all 0.3s;
+}
+
+.btn-yes {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.btn-no {
+    background-color: #f44336;
+    color: white;
+}
+
+.hide {
+    display: none;
+}
+
+/* Animación para que el texto aparezca suave */
+.mensaje { animation: fadeIn 1s; }
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
